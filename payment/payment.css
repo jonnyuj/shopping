@@ -1,0 +1,60 @@
+/* Your existing styles */
+
+.payment {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+
+.payment h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 100px;
+}
+
+.payment-method {
+    text-align: center;
+    cursor: pointer;
+}
+
+.payment-method img {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.payment-form {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.payment-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pay-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}

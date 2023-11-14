@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Oasis - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body style="background-image: url('https://images.macrumors.com/t/1mb7E1G7JipNi185diNeEJMc08w=/1600x900/smart/article-new/2019/03/Upcoming-Products-2022-Feature.jpg'); background-size: cover;">
+
+    <div class="login-container">
+        <img src="logo.png" alt="Tech Oasis Logo" class="logo">
+        <h1>Welcome to Tech Oasis</h1> 
+		<?php if (isset($_GET['error'])) { ?>
+            <p class="error"><?php echo $_GET['error']; ?></p>
+        <?php } ?>
+        <form action="login.php" method="post">
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="signup">
+            Don't have an account? <a href="signup.html">Sign up here</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
